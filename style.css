@@ -16,6 +16,7 @@ body {
       display: flex;
       text-align: center;
       margin-top: 10px;
+      margin-left: -40px;
   }
 
 .container {
