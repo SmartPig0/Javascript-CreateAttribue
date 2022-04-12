@@ -8,20 +8,29 @@ body {
     background: black;
     max-width: 100%;
     box-sizing: border-box;
+    width: 400px;
+    margin-left: 20%;
+  }
+
+  h1{
+      display: flex;
+      text-align: center;
+      margin-top: 10px;
   }
 
 .container {
     display: grid;
-    grid-template-columns: 15% 10%;
-    grid-template-rows: 20vh 20vh;       
+    grid-template-columns: 30% ;
+    grid-template-rows: 15vh 20vh;       
     grid-template-areas: "a b" "c d";
+    margin-top: 10%;
 }
 
 .cor1 {
     width: 100px;
     height: 100px;
     border: solid 2px white;
-    background: blue;
+    background: rgb(179, 28, 159);
     grid-area: a;
 }
 
@@ -29,20 +38,34 @@ body {
     width: 100px;
     height: 100px;
     border: solid 2px white;
-    background: rgb(66, 173, 121);
+    background: rgb(36, 211, 127);
     grid-area: b;
+}
+
+.cor3 {
+    width: 100px;
+    height: 100px;
+    border: solid 2px white;
+    background: rgb(253, 207, 3);
+    grid-area: c;
+}
+
+.cor4 {
+    width: 100px;
+    height: 100px;
+    border: solid 2px rgb(255, 255, 255);
+    background: rgb(167, 27, 27);  
+    grid-area: d;  
 }
 
 .botao {
     width: 100px;
     height: 100px;
-    border: solid 2px rgb(168, 45, 137);
-    background: rgb(223, 194, 67);  
-    grid-area: d;  
-}
-
-.resposta {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
     border: solid 2px red;
+    text-align: center;
+    margin-left: 15%;
 }
